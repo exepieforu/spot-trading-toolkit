@@ -1,0 +1,9 @@
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+# E501: the dashboards embed long HTML/JS lines. E741: `l` (low) is conventional in TA code.
+# E731: short lambdas are used deliberately for compact indicator formulas.
+ignore = ["E501", "E741", "E731"]
